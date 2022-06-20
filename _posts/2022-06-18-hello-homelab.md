@@ -1,7 +1,7 @@
 ---
 title: Hello HomeLab
 date: 2022-06-18 12:00:00 -400
-categories: [homelab,networking,hardware,software]
+categories: [homelab,intro]
 tags: [cloudflare,pfsense,proxmox,docker,container]    # TAG names should always be lowercase
 ---
 
@@ -13,7 +13,7 @@ In the rest of this article I will go over the hardware and software solutions t
 
 # My  HomeLab
 
-After a metric ton of trial and error I have ended up at this config below. Looking forward I would like to get a newer Raspberry Pi but will hold off until prices come down. I may buy a cheap mini PC or Intel NUC to replace it at some point. A few months ago I starting mixing in a cloud resource to add some headaches to my life as well as some good practical experience. 
+After a metric ton of trial and error I have ended up at this config below. Looking forward I would like to get a newer Raspberry Pi but will hold off until prices come down. I may buy a cheap mini PC or Intel NUC to replace it at some point. A few months ago I starting mixing in a cloud resource to add some headaches to my life as well as some good practical experience. In regards to the cloud resources there are plently of places where you can obtain free trials. The only real limit is time as they usually give you plenty of monopoly money to spend. My favorite providers (and cheaper) are [DigitalOcean's](https://try.digitalocean.com/freetrialoffer/) $100, 60 day free trial and [Linode's](https://www.linode.com/pricing/) $50, 60 day free trial. [Google Cloud](https://cloud.google.com/free) also has a completely free tier as well as [$300, 90 free trial](https://cloud.google.com/free/docs/gcp-free-tier/#free-trial) that you can add on.
 
 ## Networking
 
@@ -27,7 +27,7 @@ After a metric ton of trial and error I have ended up at this config below. Look
 Intel PRO/1000 PT Dual NIC + onboard NIC
 - Protectli Vault Pro VP2410: Celeron J4125, 8GB RAM, 256GB SSD
 - Raspberry Pi 2B: ARM A7 CPU, 1GB RAM
-- Cloud of the Month: 2-4 Cores, 4-8GB RAM, 100GB Storage
+- Cloud of the Month: 1-4 Cores, 1-8GB RAM, 10-100GB Storage
 
 ## Software
 To keep things simple and easy everything that can is running Proxmox. Proxmox is a great vessel for LXC containers. Almost every container I have is LXC and is running docker-swarm. Between Proxmox HP and Swarm's HP I have solid availbility. To manage authentication I use Teleport along side Nginx (currently piviting to Authelia) to keep things locked down especially now that I'm in the cloud.
@@ -44,7 +44,6 @@ Networking:
 Hypervisors:
 - [Proxmox](https://www.proxmox.com/)
 - [XCP-ng](https://xcp-ng.org/)
-- [VMware EXSI](https://www.example.com)
 
 Infrastructure As Code:
 - [Ansible](https://www.ansible.com/)
@@ -66,4 +65,3 @@ Other Services / Tools:
 - [LinuxGSM - Game Server](https://linuxgsm.com/)
 - [Wiki.js - Documentation](https://js.wiki/)
 - [NordVPN - Good Router/Linux VPN](https://support.nordvpn.com/Connectivity/)
-- [title](https://www.example.com)
