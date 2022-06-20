@@ -2,7 +2,7 @@
 title: Hello HomeLab
 date: 2022-06-18 12:00:00 -400
 categories: [homelab,intro]
-tags: [cloudflare,pfsense,proxmox,docker,container]    # TAG names should always be lowercase
+tags: [cloud,cloudflare,containers,docker,pfsense,proxmox]    # TAG names should always be lowercase
 ---
 
 # Introduction
