@@ -14,12 +14,12 @@ timezone: America/New_York
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Will's Wild Wiki # the main title
+title: Squirrel Squad Wiki # the main title
 
-tagline: Where all the weeds are. # it will display as the sub-title
+tagline: Where all the weeds grow. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Squirrel Squad Wiki - Documentation and More.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -47,10 +47,10 @@ social:
   email: willswildworldwebmaster@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    # - https://twitter.com/SquirrelWeeed # change to your twitter homepage
     - https://github.com/SquirrelOnWeed # change to your github homepage
-    # - https://www.youtube.com/@SquirrelOnWeed # change to your youtube homepage
-    # - https://www.twitch.tv/squirrelonweed # change to your twitch homepage
+    - https://twitter.com/SquirrelWeeed # change to your twitter homepage
+    - https://www.youtube.com/@SquirrelOnWeed # change to your youtube homepage
+    - https://www.twitch.tv/squirrelonweed # change to your twitch homepage
     # - https://www.facebook.com/squirrelonweed
     # - https://www.linkedin.com/in/squirrelnotonweed
 
@@ -93,7 +93,7 @@ social_preview_image: # string, local or CORS resources
 toc: true
 
 comments:
-  active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: giscus # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
@@ -103,14 +103,14 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    repo: squirrelonweed/squirrelonweed.github.io # <gh-username>/<repo>
+    repo_id: R_kgDOLKf1Ww
+    category: Comments
+    category_id: 
+    mapping: pathname # optional, default to 'pathname'
+    input_position: bottom # optional, default to 'bottom'
+    lang: en # optional, default to the value of `site.lang`
+    reactions_enabled: 1 # optional, default to the value of `1`
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:

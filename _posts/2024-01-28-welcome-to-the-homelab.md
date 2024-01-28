@@ -73,8 +73,8 @@ I have tested many cloud services. Most of these run promotions and/or free cred
 
 Below are two popular lists that the community does their best to keep up to date about all the free cloud resources (some with trial periods):
 
-* https://github.com/ripienaar/free-for-dev 
-* https://github.com/cloudcommunity/Cloud-Free-Tier-Comparison
+* <https://github.com/ripienaar/free-for-dev>
+* <https://github.com/cloudcommunity/Cloud-Free-Tier-Comparison>
 
 ## Software
 
@@ -86,11 +86,11 @@ I have tested quite a few hypervisors over the hears. It started with [XenServer
 
 For almost all of my containers I use [Docker](https://www.docker.com/). It is by far the easist and most popular way to run containers from my experience. When you have trouble, troubleshooting docker, docker-compose and its associated tools is a breeze. K8s is a wildly different story. I have used [K3s](https://k3s.io/) in the past along with [K8s](https://kubernetes.io/) but every time I end up frustrated I just restart the trusty docker container. My favorite management tool for containers is [Portainer](https://portainer.io/). If you are using K8s or K3s you can also try out [Rancher](https://rancher.com/). I utilize a private GitHub (replicated to my self hosted GitLab) repository for all configurations but will gladly consider opening them up if it would help others. Below are a few of my favorite public repositories where I get most of my boilerplates and configurations:
 
-* https://github.com/techno-tim/launchpad
-* https://github.com/ChristianLempa/boilerplates
-* https://github.com/JamesTurland/JimsGarage
-* https://github.com/awesome-selfhosted/awesome-selfhosted
+* <https://github.com/techno-tim/launchpad>
+* <https://github.com/ChristianLempa/boilerplates>
+* <https://github.com/JamesTurland/JimsGarage>
+* <https://github.com/awesome-selfhosted/awesome-selfhosted>
 
 ### What is Next
 
-Over the next few articles I plan deep diving into my homelab and cloudlab. We will start off with a detailed hardware tour and how I set it all up. Then we will go over how I choose to setup software on all of the hardware. If you think you will enjoy the upcoming content join the Discord, follow my (Twitter)[https://twitter.com/SquirrelWeeed], (Twitch)[https://www.twitch.tv/squirrelonweed], (YouTube)[https://www.youtube.com/@SquirrelOnWeed] and (GitHub)[https://github.com/squirrelonweed]. Thanks for reading and happy homelabbing!
+Over the next few articles I plan deep diving into my homelab and cloudlab. We will start off with a detailed hardware tour and how I set it all up. Then we will go over how I choose to setup software on all of the hardware. If you think you will enjoy the upcoming content join the Discord, follow my (Twitter)[https://twitter.com/SquirrelWeeed], (Twitch)[https://www.twitch.tv/squirrelonweed], [YouTube](https://www.youtube.com/@SquirrelOnWeed) and [GitHub](https://github.com/squirrelonweed). Thanks for reading and happy homelabbing!
