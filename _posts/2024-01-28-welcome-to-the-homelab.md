@@ -93,4 +93,4 @@ For almost all of my containers I use [Docker](https://www.docker.com/). It is b
 
 ### What is Next
 
-Over the next few articles I plan deep diving into my homelab and cloudlab. We will start off with a detailed hardware tour and how I set it all up. Then we will go over how I choose to setup software on all of the hardware. If you think you will enjoy the upcoming content join the Discord, follow my (Twitter)[https://twitter.com/SquirrelWeeed], (Twitch)[https://www.twitch.tv/squirrelonweed], [YouTube](https://www.youtube.com/@SquirrelOnWeed) and [GitHub](https://github.com/squirrelonweed). Thanks for reading and happy homelabbing!
+Over the next few articles I plan deep diving into my homelab and cloudlab. We will start off with a detailed hardware tour and how I set it all up. Then we will go over how I choose to setup software on all of the hardware. If you think you will enjoy the upcoming content join the Discord, follow my [Twitter](https://twitter.com/SquirrelWeeed), [Twitch](https://www.twitch.tv/squirrelonweed), [YouTube](https://www.youtube.com/@SquirrelOnWeed) and [GitHub](https://github.com/squirrelonweed). Thanks for reading and happy homelabbing!
