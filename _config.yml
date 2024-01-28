@@ -31,6 +31,15 @@ github:
 twitter:
   username: SquirrelWeeed # change to your twitter username
 
+youtube:
+  channelid: UCCCZDXc9N1L-tWlKkrs0N6g # change to your youtube channel ID
+
+twitch:
+  username: squirrelonweed # change your twitch username
+
+discord:
+  invitelink: AHKYXj46cG # change to your discord server's invite link
+
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
@@ -38,11 +47,12 @@ social:
   email: willswildworldwebmaster@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/SquirrelWeeed # change to your twitter homepage
+    # - https://twitter.com/SquirrelWeeed # change to your twitter homepage
     - https://github.com/SquirrelOnWeed # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    # - https://www.youtube.com/@SquirrelOnWeed # change to your youtube homepage
+    # - https://www.twitch.tv/squirrelonweed # change to your twitch homepage
+    # - https://www.facebook.com/squirrelonweed
+    # - https://www.linkedin.com/in/squirrelnotonweed
 
 google_site_verification: # fill in to your verification string
 
