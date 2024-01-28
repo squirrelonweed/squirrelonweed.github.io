@@ -23,7 +23,7 @@ My Lab currently consists of two both a cloudlab and homelab. For a lot of appli
 
 Normally I would say this is the most important part but I believe in cheap hardware and God bless China for that one. As long as it is well reviewed online I am willing to give any hardware a try. My number one tip is to buy or prepare to upgrade units with more memory. Almost all of my units have less than ten percent CPU utilization but always are running out of memory. Right now I have the luxury of many nodes so I can split my services across my lab but honestly you could easily run off one physical node with a lot of memory.
 
-![Desktop View](/assets/img/2024-01-28-welcome-to-the-homelab-reference.jpg){: width="700" height="400" }
+![Desktop View](/assets/img/welcome-to-the-homelab-reference.jpg){: width="400" height="700" }
 _A current image of my homelab running out of my apartment. Cardboard is king._
 
 #### My current homelab compute hardware is:
