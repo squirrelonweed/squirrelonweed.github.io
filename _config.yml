@@ -16,10 +16,10 @@ timezone: America/New_York
 
 title: Squirrel Squad Wiki # the main title
 
-tagline: Where all the weeds grow. # it will display as the sub-title
+tagline: Where all the weeds grow # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Squirrel Squad Wiki - Documentation and More.
+  Squirrel Squad Wiki - Documentation and More
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -31,14 +31,14 @@ github:
 twitter:
   username: SquirrelWeeed # change to your twitter username
 
-youtube:
-  channelid: UCCCZDXc9N1L-tWlKkrs0N6g # change to your youtube channel ID
+#youtube:
+#  channelid: UCCCZDXc9N1L-tWlKkrs0N6g # change to your youtube channel ID
 
-twitch:
-  username: squirrelonweed # change your twitch username
+#twitch:
+#  username: squirrelonweed # change your twitch username
 
-discord:
-  invitelink: AHKYXj46cG # change to your discord server's invite link
+#discord:
+#  invitelink: AHKYXj46cG # change to your discord server's invite link
 
 social:
   # Change to your full name.
@@ -49,8 +49,8 @@ social:
     # The first element serves as the copyright owner's link
     - https://github.com/SquirrelOnWeed # change to your github homepage
     - https://twitter.com/SquirrelWeeed # change to your twitter homepage
-    - https://www.youtube.com/@SquirrelOnWeed # change to your youtube homepage
-    - https://www.twitch.tv/squirrelonweed # change to your twitch homepage
+    #- https://www.youtube.com/@SquirrelOnWeed # change to your youtube homepage
+    #- https://www.twitch.tv/squirrelonweed # change to your twitch homepage
     # - https://www.facebook.com/squirrelonweed
     # - https://www.linkedin.com/in/squirrelnotonweed
 
