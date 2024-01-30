@@ -2,7 +2,7 @@
 title: "Welcome To The Lab"
 date: 2024-01-28 08:00:00 -0500
 categories: [Homelab, Cloudlab]
-tags: [homelab, cloudlab, hardware, network,hypervisor, container]     # TAG names should always be lowercase
+tags: [homelab, cloudlab, hardware, network, hypervisor, container]     # TAG names should always be lowercase
 ---
 
 ## Introduction
