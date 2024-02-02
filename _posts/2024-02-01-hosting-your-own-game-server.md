@@ -10,7 +10,7 @@ tags: [homelab, container]     # TAG names should always be lowercase
 Today we will be going over how to install a game server ran on the open source software [Pterodactyl](https://github.com/pterodactyl/panel). This has been one of my favorite platforms to host game servers that have a solid web GUI. The ability to share the ownership with friends and portability of docker makes this an excellent choice. Pleaes remember that you are installing a `GAME SERVER`. These are resource intensive and the full stack will not run on anything weaker than an RPi 5. We will go over how to mitigate this below. Alright, lets get into it!
 
 ![Desktop View](/assets/img/2024-02-01-hosting-your-own-game-server-panel.png){: width="800" height="800" }
-_An image showing the Pterodactyl Panel Homepage._
+_An image showing the Pterodactyl Running server._
 
 #### Prerequisites
 
@@ -59,7 +59,7 @@ For most of these steps we will not have to utilize the CLI other than to run `s
 
 *  `nano docker-compose.yml`
 
-Copy the contents of [Panel Docker Compose](https://github.com/squirrelonweed/homelab/blob/main/docker/pterodactyl/panel/docker-compose.yaml) (not yet public, use below) to ~/pterodactyl/panel/docker-compose.yml.
+Copy the contents of the docker-compose file below to ~/pterodactyl/panel/docker-compose.yml.
 
 ```
 version: '3.8'
@@ -154,7 +154,7 @@ networks:
 
 *  `nano docker-compose.yml`
 
-Copy the contents of [Wings Docker Compose](https://github.com/squirrelonweed/homelab/blob/main/docker/pterodactyl/wings/docker-compose.yaml) (not yet public, use below) to ~/pterodactyl/wings/docker-compose.yml.
+Copy the contents of the docker-compose file below to ~/pterodactyl/wings/docker-compose.yml.
 
 ```
 version: '3.8'
@@ -393,7 +393,7 @@ networks:
 
 Alternatively if you are using CLI run the following commands:
 
-* `wget -O ~/pterodactyl/panel/docker-compose.yaml https://raw.githubusercontent.com/squirrelonweed/homelab/main/docker/pterodactyl/panel/docker-compose.yaml` (not yet publicly available, nano file above)
+* `wget -O ~/pterodactyl/panel/docker-compose.yaml (repo not yet publicly available, nano file above)
 
 *  `cd ~/pterodactyl/panel`
 
@@ -475,7 +475,7 @@ networks:
  
  Alternatively if you are using CLI run the following commands:
 
-* `wget -O ~/pterodactyl/panel/docker-compose.yaml https://raw.githubusercontent.com/squirrelonweed/homelab/main/docker/pterodactyl/wings/docker-compose.yaml` (not yet publicly available, use above)
+* `wget -O ~/pterodactyl/panel/docker-compose.yaml (repo not yet publicly available, nano file above)
 
 *  `cd ~/pterodactyl/wings`
 
