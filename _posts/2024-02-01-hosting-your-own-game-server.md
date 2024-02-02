@@ -9,7 +9,7 @@ tags: [homelab, container]     # TAG names should always be lowercase
 
 Today we will be going over how to install a game server ran on the open source software [Pterodactyl](https://github.com/pterodactyl/panel). This has been one of my favorite platforms to host game servers that have a solid web GUI. The ability to share the ownership with friends and portability of docker makes this an excellent choice. Pleaes remember that you are installing a `GAME SERVER`. These are resource intensive and the full stack will not run on anything weaker than an RPi 5. We will go over how to mitigate this below. Alright, lets get into it!
 
-![Desktop View](/assets/img/2024-02-01-hosting-your-own-game-server-panel.png){: width="1000" height="200" }
+![Desktop View](/assets/img/2024-02-01-hosting-your-own-game-server-panel.png){: width="800" height="800" }
 _An image showing the Pterodactyl Panel Homepage._
 
 #### Prerequisites
