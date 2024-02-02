@@ -411,7 +411,7 @@ Login to your Panel by visiting your domain name. Visit `Admin` (gear icon in to
 * Total Disk Space: `16384`
 * Daemon Port: `443`
 
-![Desktop View](/assets/img/hosting-your-own-game-server-new-node.png){: width="700" height="700" }
+![Desktop View](/assets/img/2024-02-01-hosting-your-own-game-server-new-node.png){: width="700" height="700" }
 _An image showing the Panel New Node Config page filled in._
 
 Click on Create Node in the bottom right corner. Now click on configuration and copy the config.yml file made for your node specified above. If you do not see that it is HTTPS you will need to go back and modify your panel's .env file (located at /srv/pterodactyl/var/.env) and set it to APP_URL to https. The list of trusted proxies is Cloudflare's Flexible SSL. Below are the modified .env file contents:
@@ -483,7 +483,7 @@ networks:
 
 Head back to your Panel and click on `Admin` -> `Nodes` and you should see a green heart next to it. If so you have successfully installed Pterodactyl Panel and Wings via Docker. The last things to do are:
 
-![Desktop View](/assets/img/hosting-your-own-game-server-nodes.png){: width="1000" height="146" }
+![Desktop View](/assets/img/2024-02-01-hosting-your-own-game-server-nodes.png){: width="1000" height="146" }
 _Example of two nodes that are successfully connected a a panel._
 
 *  Setup port forwarding for any potential server ports
