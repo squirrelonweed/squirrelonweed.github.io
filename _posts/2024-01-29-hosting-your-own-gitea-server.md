@@ -2,7 +2,7 @@
 title: "Hosting Your Own Gitea Server"
 date: 2024-01-29 08:00:00 -0500
 categories: [Homelab, Cloudlab]
-tags: [homelab, cloudlab, container]     # TAG names should always be lowercase
+tags: [homelab, cloudlab, container] # TAG names should always be lowercase
 ---
 
 ## Introduction
@@ -13,22 +13,22 @@ Today I want to share how I spun up my own Gitea server. I currently ownly use i
 
 ### Hardware Requirements:
 
-* 1 VM with 2 CPU, 2GB RAM, 8GB HD
+- 1 VM with 2 CPU, 2GB RAM, 8GB HD
 
 > If you are cool with hosting this in the cloud you can easily launch this whole project (and more) with the lower line of shared CPU offerings by offloading your Databases. Something like 1 CPU, 1GB RAM, 5GB HD will do as long as you have a little patience.
 {: .prompt-tip }
 
 ### Software Requirements:
 
-* Cloudflare
+- Cloudflare
   - DNS record
   - Proxy Enabled
   - API Token for Reverse Proxy
-* Docker and Docker-Compose
+- Docker and Docker-Compose
   - Portainer (optional for you but will be used in this scenario)
-  - Nginx Proxy Manager  (commonly referred to as NPM)
+  - Nginx Proxy Manager (commonly referred to as NPM)
   - Gitea
-* Databases
+- Databases
   - MariaDB
   - MySQL
 
@@ -37,12 +37,12 @@ Today I want to share how I spun up my own Gitea server. I currently ownly use i
 
 ### What our stack is doing for us:
 
-* Cloudflare will host our DNS record, https://gitea.squirrelonweed.com.
-* Docker
+- Cloudflare will host our DNS record, https://gitea.squirrelonweed.com.
+- Docker
   - Portainer will be used to manage our docker containers.
-  - Nginx Proxy Manager will be used to manage our reverse proxy along with LetsEncrypt certificates. 
+  - Nginx Proxy Manager will be used to manage our reverse proxy along with LetsEncrypt certificates.
   - Docker (via Docker-Compose) will be used to spin up our Gitea server.
-* Databases
+- Databases
   - MariaDB will be used for Nginx Proxy Manager.
   - MySQL will be used for Gitea.
 
@@ -52,11 +52,12 @@ Today I want to share how I spun up my own Gitea server. I currently ownly use i
 
 Start by logging into the [Cloudflare](https://dash.cloudflare.com/) dashboard. Click on your Domain name. Then head to `Security` -> `WAF` and lets first establish two firewall rules. These will reduce the load on our network, server by automatically block a majority of malicious traffic long before it reaching our local router. Lets make the following firewall rules:
 
-* Name: Block Anything Outside _YOUR_ country
+- Name: Block Anything Outside _YOUR_ country
+
   - If incoming request match: Country, does not equal, _YOUR_ country
   - Then take action: Block
 
-* Name: Challenge Anything Inside _YOUR_ country
+- Name: Challenge Anything Inside _YOUR_ country
   - If incoming request match: Country, equals, _YOUR_ country
   - Then take action: Managed Challenge
 
@@ -78,18 +79,20 @@ Alrighty, now we have all of our external requirements completed on cloudflare a
 
 To utilize more of the Gitea features and increase our security posture we still want to setup a service account for Gitea. We will need to run the following commands to setup the `git` account and SSH shim for the Gitea SSH service.
 
-* `sudo adduser --system --shell /bin/bash --gecos 'Git Version Control' --group --disabled-password --home /home/git git`
-* `sudo -u git ssh-keygen -t rsa -b 4096 -C "Gitea Host Key"`
-* `sudo -u git cat /home/git/.ssh/id_rsa.pub | sudo -u git tee -a /home/git/.ssh/authorized_keys`
-* `sudo -u git chmod 600 /home/git/.ssh/authorized_keys`
-* copy snippit block below as one copy / paste:
+- `sudo adduser --system --shell /bin/bash --gecos 'Git Version Control' --group --disabled-password --home /home/git git`
+- `sudo -u git ssh-keygen -t rsa -b 4096 -C "Gitea Host Key"`
+- `sudo -u git cat /home/git/.ssh/id_rsa.pub | sudo -u git tee -a /home/git/.ssh/authorized_keys`
+- `sudo -u git chmod 600 /home/git/.ssh/authorized_keys`
+- copy snippit block below as one copy / paste:
+
 ```
 cat <<"EOF" | sudo tee /usr/local/bin/gitea
 #!/bin/sh
 ssh -p 222 -o StrictHostKeyChecking=no git@127.0.0.1 "SSH_ORIGINAL_COMMAND=\"$SSH_ORIGINAL_COMMAND\" $0 $@"
 EOF
 ```
-* `sudo chmod +x /usr/local/bin/gitea`
+
+- `sudo chmod +x /usr/local/bin/gitea`
 
 ### Docker
 
@@ -202,12 +205,12 @@ If everything went well we have a total of two stacks and four containers. If ev
 
 In Portainer begin by clicking on `Containers` in the top left. From there you should see the four containers (npm, npm-db, gitea, gitea-db). To the right of `npm` click on the port `81:81`. In the new window login to NPM with the following credentials:
 
-* Email: admin@example.com
-* Password: changeme
+- Email: admin@example.com
+- Password: changeme
 
 Once logged in head to `Proxy Hosts` then click on `Add Proxy Host`. Input the following information:
 
-* Details
+- Details
   - Domain Name: gitea.squirrelonweed.com
   - Scheme: http
   - Forward Hostname / IP: The IP address of the host running the gitea container.
@@ -217,9 +220,9 @@ Once logged in head to `Proxy Hosts` then click on `Add Proxy Host`. Input the f
 ![Desktop View](/assets/img/hosting-your-own-gitea-server-npm-details.png){: width="400" height="400" }
 _Nginx Proxy Manager Proxy Host Details Page._
 
-* SSL
+- SSL
   - SSL Certificate: Request a new SSL Certificate with Lets Encrypt
-  - Check DNS Challenge. For the provider choose Cloudflare and input the API Token from earlier. 
+  - Check DNS Challenge. For the provider choose Cloudflare and input the API Token from earlier.
   - Enable the following options: Block Common Exploits, Websockets Support
 
 ![Desktop View](/assets/img/hosting-your-own-gitea-server-npm-ssl.png){: width="400" height="700" }
@@ -227,9 +230,9 @@ _Nginx Proxy Manager Proxy Host SSL Page._
 
 If everything went well you should be returned back to the list of Proxy Hosts and you should see the new gitea.squirrelonweed.com proxy host listed. Feel free to click on it to be sent to the setup page of your new private gitea service. Proceed to complete the Gitea Initial Setup. The important boxes to be sure are filled correctly are:
 
-* Database Settings
+- Database Settings
   - Database Type: MySQL
-* General Settings
+- General Settings
   - Server Domain: gitea.squirrelonweed.com
   - Gitea Base URL: https://gitea.squirrelonweed.com
 

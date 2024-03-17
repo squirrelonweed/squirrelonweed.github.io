@@ -43,7 +43,7 @@ Multi Host recommended hardware configuration:
   - 1 VM with 4+ vCPU, 8GB+ RAM, 100GB HD
 
 > If you choose the single host setup you will have issues with the port 443 being in reserve as everything will leverage it in the end.
-> {: .prompt-tip }
+{: .prompt-tip }
 
 #### Setup Linux
 
