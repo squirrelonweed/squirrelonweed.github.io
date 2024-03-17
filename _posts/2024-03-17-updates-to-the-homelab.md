@@ -26,7 +26,7 @@ In case you didn't read the first article my lab currently consists of two both 
 Once again I went and bought ye ole AliExpress specials. Locked in a CWWK fanless unit with an Intel J6412 for what I felt like was free. This thing has been a champ since the beginning. IOMMU works like a charm for my router. The switch I bought has the lowest effort management web interface and few options but the throughput is spot on. The biggest change for me (in my opinion) was the rack. It added some needed professionalism and organanization to my office.
 
 ![Desktop View](/assets/img/homelab-update-server-rack.png){: width="400" height="700" }
-_An image of my homelab running in my apartment. I love seeing this over the cardboard mountain._
+_An image of my homelab running in my apartment. I love seeing this over the cardboard in the corner._
 
 #### My current homelab compute hardware is:
 
